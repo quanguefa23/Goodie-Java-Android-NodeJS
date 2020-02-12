@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="8.5"
+    android:background="@drawable/curve"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:background="@drawable/curve2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <TextView
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bạn có chắc muốn đăng xuất hay không?"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2">
+        <Button
+            android:textColor="#495F2E"
+            android:background="@drawable/cancel_button_custom"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/out_cancel"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Hủy"/>
+
+        <Button
+            android:textColor="#E3E9DD"
+            android:background="@drawable/selector"
+            android:id="@+id/out_ok"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="OK"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_main"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fragment_0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/fragment_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/fragment_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/fragment_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/addProduct"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorMain"/>
+            <ImageView
+                android:onClick="switchFragment"
+                android:id="@+id/home"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:src="@drawable/home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <ImageView
+                android:onClick="switchFragment"
+                android:id="@+id/search"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:src="@drawable/search"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <ImageView
+                android:onClick="switchFragment"
+                android:id="@+id/notification"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:src="@drawable/notification"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <ImageView
+                android:onClick="switchFragment"
+                android:id="@+id/profile"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:src="@drawable/profile"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
